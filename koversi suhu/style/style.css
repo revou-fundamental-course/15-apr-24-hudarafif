@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("suhu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.temperature-converter {
+  background: linear-gradient(
+    135deg,
+    rgba(240, 240, 240, 0.9),
+    rgba(204, 204, 204, 0.9)
+  );
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(11, 54, 96);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.temp-field {
+  margin-bottom: 15px;
+}
+
+.degree-field input,
+.temp-field select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.result {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.result-value {
+  background-color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0056b3;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:active {
+  background-color: #003366;
+}
+
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suhu Converter</title>
+<link rel="stylesheet" href="/koversi suhu/style/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="temperature-converter">
+            
+            <h1 class="title">Temperature Converter</h1>
+              <div>
+                <p>Masukkan derjat Celcius(°C) ke kotak di bawah ini, lalu klik tombol konversi untuk mendapatkan hasil konversi kedalam bentuk Farenheit (°F). </p>
+              </div>
+
+      <!-- for from type -->
+      <div class="temp-field">
+        <label for="from-temp-type">Temperatur awal:</label>
+        <select
+          name="from-temperatures"
+          id="from-temp-type"
+          autocomplete="on"
+        >
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+          <option value="reamur">Reamur</option>
+        </select>
+      </div>
+
+      <!-- for to type -->
+      <div class="temp-field">
+        <label for="to-temp-type">Temperatur target:</label>
+        <select name="to-temperatures" id="to-temp-type" autocomplete="on">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+          <option value="reamur">Reamur</option>
+        </select>
+      </div>
+
+      <!-- degree input field -->
+      <div class="degree-field">
+        <label for="degree">Input satuan: </label>
+        <input type="number" name="degree" id="degree" />
+      </div>
+
+      <!-- result -->
+      <div class="result">
+        <span class="result-heading">Hasil konversi:</span>
+        <h2 class="result-value" id="result"></h2>
+      </div>
+
+      <button id="convert-btn">Convert</button>
+      <button id="clear-btn">Reset</button>
+    </div>
+    <div id="calculation"></div>
+  </div>
+
+<script src="/koversi suhu/script/script.js"></script>
+</body>
+</html>
